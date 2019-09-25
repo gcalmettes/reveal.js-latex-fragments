@@ -46,6 +46,22 @@ body {
   font-size: 0.6em !important;
 }
 
+section *,
+body .reveal .slides section .fragment {
+  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+section .fragment.fragapply:not(.visible) {
+  opacity: 1;
+  visibility: inherit;
+  color: inherit;
+  background-color: inherit;
+  font-size: inherit !important;
+}
+
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
